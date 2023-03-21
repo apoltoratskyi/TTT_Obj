@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tictactoe_obj</title>
+    <style>
+        body {
+            background-color: #504b4b;
+            margin-top: 10%;
+            height: 100%;
+            font-size: 200%;
+        }
+        .row {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-evenly;
+            flex-direction: row-reverse;
+        }
+        aside {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #grid {
+            margin-left:auto;
+            margin-right:auto;
+            width: 300px;
+            height: 300px;
+        }
+        td, th {
+            margin: auto;
+            padding: 15px;
+            border-width: thick;
+            height: 50px;
+            vertical-align:top;
+        }
+        .cell {
+            display: inline-block;
+            text-align: center;
+            line-height: 90px;
+            height: 90px;
+            width: 96px;
+            border-width: 5px;
+            vertical-align:top;
+        }
+        button {
+            background-color: #A9A9A9FF;
+            border-radius: 6px;
+
+        }
+        button:hover {
+            background-color: #5F9EA0FF;
+            text-decoration-line: underline;
+            text-decoration-thickness: 2px;
+        }
+        .menu {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 50px;
+        }
+
+    </style>
+    <script src="index.js"></script>
+</head>
+<body>
+<div id="message" style="height: 50px; text-align: center; margin-bottom: 50px; opacity: 0.6;"></div>
+<div class="row">
+    <div class="right">
+        <div id="next"></div>
+        <div id="grid">
+        </div>
+        <div class="menu">
+            <div class="buttons" id="buttons">
+                <button id="X" style="font-size: 20px">&#10060</button>
+                <button id="O" style="font-size: 20px">&#11093</button>
+            </div>
+            <button id="reset" style="margin: 3px; color: #FF0000FF">RESTART</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>
